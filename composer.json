@@ -1,0 +1,17 @@
+{
+    "name": "api/event",
+    "description": "Common API for Event",
+    "keywords": ["api", "CommonApi", "event"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AmyStephen",
+            "homepage": "http://Molajo.org/"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Api\\Event\\": ""
+        }
+    }
+}
