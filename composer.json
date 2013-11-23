@@ -1,17 +1,24 @@
 {
-    "name": "api/event",
-    "description": "Common API for Event",
+    "name": "commonapi/event",
+    "description": "Common Event Api Interface",
     "keywords": ["api", "CommonApi", "event"],
+    "homepage": "https://github.com/CommonApi/Event",
+    "type": "api",
     "license": "MIT",
     "authors": [
         {
             "name": "AmyStephen",
-            "homepage": "http://Molajo.org/"
+            "email": "AmyStephen@gmail.com",
+            "homepage": "http://Molajo.org"
         }
     ],
+    "require": {
+        "php": ">=5.3.10",
+        "commonapi/exception": ">=0.1"
+    },
     "autoload": {
         "psr-0": {
-            "Api\\Event\\": ""
+            "CommonApi\\Event\\": ""
         }
     }
 }
