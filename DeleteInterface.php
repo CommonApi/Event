@@ -14,7 +14,7 @@ namespace CommonApi\Event;
  * @author     Amy Stephen
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface DeleteInterface
 {
@@ -22,7 +22,7 @@ interface DeleteInterface
      * Before delete processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onBeforeDelete();
 
@@ -30,7 +30,7 @@ interface DeleteInterface
      * After delete processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onAfterDelete();
 }

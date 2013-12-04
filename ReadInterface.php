@@ -14,7 +14,7 @@ namespace CommonApi\Event;
  * @author     Amy Stephen
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface ReadInterface
 {
@@ -22,7 +22,7 @@ interface ReadInterface
      * Pre-read processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onBeforeRead();
 
@@ -30,7 +30,7 @@ interface ReadInterface
      * Post-read processing - one row at a time
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onAfterRead();
 
@@ -38,7 +38,7 @@ interface ReadInterface
      * Post-read processing - all rows at one time from query_results
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onAfterReadall();
 }

@@ -14,7 +14,7 @@ namespace CommonApi\Event;
  * @author     Amy Stephen
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface DisplayInterface
 {
@@ -22,7 +22,7 @@ interface DisplayInterface
      * After Route and Authorisation, the Theme/Page are parsed
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onBeforeParse();
 
@@ -30,7 +30,7 @@ interface DisplayInterface
      * After the body render is complete and before the document head rendering starts
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onBeforeParseHead();
 
@@ -38,7 +38,7 @@ interface DisplayInterface
      * After the Read Query has executed but Before Query results are injected into the View
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onBeforeRenderView();
 
@@ -46,7 +46,7 @@ interface DisplayInterface
      * After the View has been rendered but before the output has been passed back to the Includer
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onAfterRenderView();
 
@@ -54,7 +54,7 @@ interface DisplayInterface
      * On after parsing and rendering is complete
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onAfterParse();
 }

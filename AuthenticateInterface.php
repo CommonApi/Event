@@ -14,7 +14,7 @@ namespace CommonApi\Event;
  * @author     Amy Stephen
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface AuthenticateInterface
 {
@@ -22,7 +22,7 @@ interface AuthenticateInterface
      * Before logging in processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onBeforeLogin();
 
@@ -30,7 +30,7 @@ interface AuthenticateInterface
      * After Logging in event
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onAfterLogin();
 
@@ -38,7 +38,7 @@ interface AuthenticateInterface
      * Before logging out processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onBeforeLogout();
 
@@ -46,7 +46,7 @@ interface AuthenticateInterface
      * After Logging out event
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onAfterLogout();
 }

@@ -14,7 +14,7 @@ namespace CommonApi\Event;
  * @package    Event
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface EventInterface
 {
@@ -23,19 +23,21 @@ interface EventInterface
      *
      * @param    $key
      *
-     * @return   mixed|array|null|object|string
-     * @since    1.0
+     * @return   mixed
+     * @since    0.1
+     * @throws   \CommonApi\Exception\InvalidArgumentException
      */
     public function get($key);
 
     /**
      * Set a property value
      *
-     * @param    string $key
-     * @param    string $value
+     * @param    string  $key
+     * @param    mixed   $value
      *
      * @return   $this
-     * @since    1.0
+     * @since    0.1
+     * @throws   \CommonApi\Exception\InvalidArgumentException
      */
     public function set($key, $value);
 }

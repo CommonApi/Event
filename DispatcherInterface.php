@@ -14,7 +14,7 @@ namespace CommonApi\Event;
  * @package    Event
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface DispatcherInterface
 {
@@ -26,7 +26,7 @@ interface DispatcherInterface
      * @param   int      $priority 0 (lowest) to 100 (highest)
      *
      * @return  mixed
-     * @since   1.0
+     * @since   0.1
      */
     public function registerForEvent($event_name, callable $callback, $priority = 50);
 
@@ -34,10 +34,10 @@ interface DispatcherInterface
      * Requester Schedules Event with Dispatcher
      *
      * @param   string         $event_name
-     * @param   EventInterface $event
+     * @param   EventInterface $event      CommonApi\Event\EventInterface
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function triggerEvent($event_name, EventInterface $event);
 }

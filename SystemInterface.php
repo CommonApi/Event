@@ -14,7 +14,7 @@ namespace CommonApi\Event;
  * @author     Amy Stephen
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface SystemInterface
 {
@@ -22,7 +22,7 @@ interface SystemInterface
      * After Initialise Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onAfterInitialise();
 
@@ -30,7 +30,7 @@ interface SystemInterface
      * After Route Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onAfterRoute();
 
@@ -38,7 +38,7 @@ interface SystemInterface
      * After Authorise Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onAfterAuthorise();
 
@@ -46,7 +46,7 @@ interface SystemInterface
      * After Resource Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onAfterResource();
 
@@ -54,7 +54,7 @@ interface SystemInterface
      * After Execute Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function onAfterExecute();
 }
