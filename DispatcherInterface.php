@@ -22,13 +22,13 @@ interface DispatcherInterface
      * Listener registers for an Event with the Dispatcher
      *
      * @param   string   $event_name
-     * @param   callable $callback
+     * @param   object   $callback
      * @param   int      $priority 0 (lowest) to 100 (highest)
      *
      * @return  mixed
      * @since   0.1
      */
-    public function registerForEvent($event_name, callable $callback, $priority = 50);
+    public function registerForEvent($event_name, $callback, $priority = 50);
 
     /**
      * Requester Schedules Event with Dispatcher
