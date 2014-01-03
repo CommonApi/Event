@@ -4,7 +4,7 @@
  *
  * @package    Event
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
- * @copyright  2013 Common Api. All rights reserved.
+ * @copyright  2014 Amy Stephen. All rights reserved.
  */
 namespace CommonApi\Event;
 
@@ -13,8 +13,8 @@ namespace CommonApi\Event;
  *
  * @author     Amy Stephen
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
- * @copyright  2013 Common Api. All rights reserved.
- * @since      0.1
+ * @copyright  2014 Amy Stephen. All rights reserved.
+ * @since      1.0
  */
 interface SystemInterface
 {
@@ -48,7 +48,7 @@ interface SystemInterface
      * @return  $this
      * @since   0.1
      */
-    public function onAfterResource();
+    public function onBeforeExecute();
 
     /**
      * After Execute Processing
