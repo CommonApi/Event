@@ -32,8 +32,8 @@ interface EventInterface
     /**
      * Set a property value
      *
-     * @param    string  $key
-     * @param    mixed   $value
+     * @param    string $key
+     * @param    mixed  $value
      *
      * @return   $this
      * @since    0.1

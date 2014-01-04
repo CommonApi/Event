@@ -21,9 +21,9 @@ interface DispatcherInterface
     /**
      * Listener registers for an Event with the Dispatcher
      *
-     * @param   string   $event_name
-     * @param   object   $callback
-     * @param   int      $priority 0 (lowest) to 100 (highest)
+     * @param   string $event_name
+     * @param   object $callback
+     * @param   int    $priority 0 (lowest) to 100 (highest)
      *
      * @return  mixed
      * @since   0.1
