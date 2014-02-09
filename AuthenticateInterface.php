@@ -22,7 +22,7 @@ interface AuthenticateInterface
      * Before logging in processing
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function onBeforeAuthenticate();
 
@@ -30,7 +30,7 @@ interface AuthenticateInterface
      * After Logging in event
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function onAfterAuthenticate();
 
@@ -38,7 +38,7 @@ interface AuthenticateInterface
      * Before logging out processing
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function onBeforeLogout();
 
@@ -46,7 +46,7 @@ interface AuthenticateInterface
      * After Logging out event
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function onAfterLogout();
 }

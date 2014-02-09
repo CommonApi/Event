@@ -25,7 +25,7 @@ interface EventDispatcherInterface
      * @param   array          $listeners - array of callable anonymous functions
      *
      * @return  array
-     * @since   0.1
+     * @since   1.0
      */
     public function triggerListeners(EventInterface $event, array $listeners = array());
 }

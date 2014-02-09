@@ -22,7 +22,7 @@ interface CreateInterface
      * Pre-create processing
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function onBeforeCreate();
 
@@ -30,7 +30,7 @@ interface CreateInterface
      * Post-create processing
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function onAfterCreate();
 }

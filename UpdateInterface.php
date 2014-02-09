@@ -22,7 +22,7 @@ interface UpdateInterface
      * Before update processing
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function onBeforeUpdate();
 
@@ -30,7 +30,7 @@ interface UpdateInterface
      * After update processing
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function onAfterUpdate();
 }
