@@ -20,5 +20,11 @@
         "psr-4": {
             "CommonApi\\Event\\": ""
         }
-    }
+    },
+
+    "archive": {
+        "exclude": ["/.dev"]
+    },
+
+    "minimum-stability": "dev"
 }
