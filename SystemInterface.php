@@ -27,12 +27,44 @@ interface SystemInterface
     public function onAfterInitialise();
 
     /**
+     * Before Route Processing
+     *
+     * @return  $this
+     * @since   1.0
+     */
+    public function onBeforeRoute();
+
+    /**
      * After Route Processing
      *
      * @return  $this
      * @since   1.0
      */
     public function onAfterRoute();
+
+    /**
+     * Before Resource Processing
+     *
+     * @return  $this
+     * @since   1.0
+     */
+    public function onBeforeResource();
+
+    /**
+     * After Resource Processing
+     *
+     * @return  $this
+     * @since   1.0
+     */
+    public function onAfterResource();
+
+    /**
+     * Before Authorise Processing
+     *
+     * @return  $this
+     * @since   1.0
+     */
+    public function onBeforeAuthorise();
 
     /**
      * After Authorise Processing
