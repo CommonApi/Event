@@ -22,17 +22,17 @@ interface DisplayInterface
      * Before any parsing or rendering, after Execute
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onBeforeRender();
 
     /**
      * Before parsing of rendered_page to extract tokens for rendering
      *  This is a recursive process - parse - render - parse - render - until no tokens found
-     *  exclude_tokens contains values that are not processed during this parsing
+     *  token_objects exclude_tokens contains values that are not processed during this parsing
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onBeforeParse();
 
@@ -40,7 +40,7 @@ interface DisplayInterface
      * After parsing for tokens (recursive), parameters->tokens contains parsed results
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onAfterParse();
 
@@ -48,7 +48,7 @@ interface DisplayInterface
      * After the Read Query has executed but rendering the view
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onBeforeRenderView();
 
@@ -56,7 +56,7 @@ interface DisplayInterface
      * During Template View rendering, before the rendering of the Head
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onBeforeRenderViewHead();
 
@@ -64,7 +64,7 @@ interface DisplayInterface
      * During Template View rendering for each item
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onBeforeRenderViewItem();
 
@@ -72,7 +72,7 @@ interface DisplayInterface
      * During Template View rendering, before the rendering of the Footer
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onBeforeRenderViewFooter();
 
@@ -80,7 +80,7 @@ interface DisplayInterface
      * After the View has been rendered but before it has been inserted into the rendered_page
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onAfterRenderView();
 
@@ -88,7 +88,7 @@ interface DisplayInterface
      * On after rendering the entire document
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onAfterRender();
 }

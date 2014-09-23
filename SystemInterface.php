@@ -22,7 +22,7 @@ interface SystemInterface
      * After Initialise Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onAfterInitialise();
 
@@ -30,7 +30,7 @@ interface SystemInterface
      * Before Route Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onBeforeRoute();
 
@@ -38,7 +38,7 @@ interface SystemInterface
      * After Route Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onAfterRoute();
 
@@ -46,7 +46,7 @@ interface SystemInterface
      * Before Resource Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onBeforeResource();
 
@@ -54,7 +54,7 @@ interface SystemInterface
      * After Resource Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onAfterResource();
 
@@ -62,7 +62,7 @@ interface SystemInterface
      * Before Authorise Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onBeforeAuthorise();
 
@@ -70,7 +70,7 @@ interface SystemInterface
      * After Authorise Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onAfterAuthorise();
 
@@ -78,7 +78,7 @@ interface SystemInterface
      * After Resource Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onBeforeExecute();
 
@@ -86,7 +86,7 @@ interface SystemInterface
      * After Execute Processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onAfterExecute();
 }

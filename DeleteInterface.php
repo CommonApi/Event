@@ -22,7 +22,7 @@ interface DeleteInterface
      * Before delete processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onBeforeDelete();
 
@@ -30,7 +30,7 @@ interface DeleteInterface
      * After delete processing
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function onAfterDelete();
 }

@@ -26,7 +26,7 @@ interface DispatcherInterface
      * @param   int    $priority 0 (lowest) to 100 (highest)
      *
      * @return  mixed
-     * @since   1.0
+     * @since   1.0.0
      */
     public function registerForEvent($event_name, $callback, $priority = 50);
 
@@ -34,10 +34,11 @@ interface DispatcherInterface
      * Requester Schedules Event with Dispatcher
      *
      * @param   string         $event_name
-     * @param   EventInterface $event      CommonApi\Event\EventInterface
+     * @param   EventInterface $event CommonApi\Event\EventInterface
+     * @param   callable       $debug_callback
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
-    public function scheduleEvent($event_name, EventInterface $event);
+    public function scheduleEvent($event_name, EventInterface $event, callable $debug_callback = null);
 }

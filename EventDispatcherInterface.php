@@ -22,10 +22,16 @@ interface EventDispatcherInterface
      * Event Dispatcher triggers Listeners
      *
      * @param   EventInterface $event
-     * @param   array          $listeners - array of callable anonymous functions
+     * @param   array          $listeners - array of callable functions
+     * @param   callable       $debug_callback
      *
      * @return  array
-     * @since   1.0
+     * @since   1.0.0
      */
-    public function triggerListeners(EventInterface $event, array $listeners = array());
+    public function triggerListeners(
+        EventInterface $event,
+        array $listeners = array(),
+        callable $debug_callback = null
+    );
 }
+
