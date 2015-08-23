@@ -1,6 +1,6 @@
 <?php
 /**
- * Create Event Interface
+ * Delete Event Interface
  *
  * @package    Event
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
@@ -9,28 +9,28 @@
 namespace CommonApi\Event;
 
 /**
- * Create Event Interface
+ * Delete Event Interface
  *
  * @author     Amy Stephen
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @since      1.0
  */
-interface CreateInterface
+interface DeleteEventInterface
 {
     /**
-     * Pre-create processing
+     * Before delete processing
      *
      * @return  $this
      * @since   1.0.0
      */
-    public function onBeforeCreate();
+    public function onBeforeDelete();
 
     /**
-     * Post-create processing
+     * After delete processing
      *
      * @return  $this
      * @since   1.0.0
      */
-    public function onAfterCreate();
+    public function onAfterDelete();
 }

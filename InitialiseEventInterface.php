@@ -1,6 +1,6 @@
 <?php
 /**
- * Read Event Interface
+ * Initialise Event Interface
  *
  * @package    Event
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
@@ -9,36 +9,28 @@
 namespace CommonApi\Event;
 
 /**
- * Read Event Interface
+ * Initialise Event Interface
  *
  * @author     Amy Stephen
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @since      1.0
  */
-interface ReadInterface
+interface InitialiseEventInterface
 {
     /**
-     * Pre-read processing
+     * Pre-initialise row processing
      *
      * @return  $this
      * @since   1.0.0
      */
-    public function onBeforeRead();
+    public function onBeforeInitialise();
 
     /**
-     * Post-read processing - one row at a time
+     * Post-initialise row processing
      *
      * @return  $this
      * @since   1.0.0
      */
-    public function onAfterRead();
-
-    /**
-     * Post-read processing - all rows at one time from query_results
-     *
-     * @return  $this
-     * @since   1.0.0
-     */
-    public function onAfterReadall();
+    public function onAfterInitialise();
 }

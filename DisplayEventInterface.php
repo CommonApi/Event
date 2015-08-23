@@ -16,7 +16,7 @@ namespace CommonApi\Event;
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @since      1.0
  */
-interface DisplayInterface
+interface DisplayEventInterface
 {
     /**
      * Before any parsing or rendering, after Execute
@@ -37,6 +37,14 @@ interface DisplayInterface
     public function onBeforeParse();
 
     /**
+     * After the Body of the document has been processed for tokens and before the Head is rendered
+     *
+     * @return  $this
+     * @since   1.0.0
+     */
+    public function onBeforeParseHead();
+
+    /**
      * After parsing for tokens (recursive), parameters->tokens contains parsed results
      *
      * @return  $this
@@ -45,12 +53,52 @@ interface DisplayInterface
     public function onAfterParse();
 
     /**
-     * After the Read Query has executed but rendering the view
+     * Before Theme is Rendered
      *
      * @return  $this
      * @since   1.0.0
      */
-    public function onBeforeRenderView();
+    public function onBeforeRenderTheme();
+
+    /**
+     * After the Theme has been rendered but before it has been inserted into the rendered_page
+     *
+     * @return  $this
+     * @since   1.0.0
+     */
+    public function onAfterRenderTheme();
+
+    /**
+     * Before Page View is Rendered
+     *
+     * @return  $this
+     * @since   1.0.0
+     */
+    public function onBeforeRenderPage();
+
+    /**
+     * After the Page has been rendered but before it has been inserted into the rendered_page
+     *
+     * @return  $this
+     * @since   1.0.0
+     */
+    public function onAfterRenderPage();
+
+    /**
+     * Before Template View is Rendered
+     *
+     * @return  $this
+     * @since   1.0.0
+     */
+    public function onBeforeRenderTemplate();
+
+    /**
+     * Prepare Data for Injecting into Template
+     *
+     * @return  $this
+     * @since   1.0.0
+     */
+    public function onGetTemplateData();
 
     /**
      * During Template View rendering, before the rendering of the Head
@@ -58,7 +106,7 @@ interface DisplayInterface
      * @return  $this
      * @since   1.0.0
      */
-    public function onBeforeRenderViewHead();
+    public function onBeforeRenderTemplateHead();
 
     /**
      * During Template View rendering for each item
@@ -66,7 +114,7 @@ interface DisplayInterface
      * @return  $this
      * @since   1.0.0
      */
-    public function onBeforeRenderViewItem();
+    public function onBeforeRenderTemplateItem();
 
     /**
      * During Template View rendering, before the rendering of the Footer
@@ -74,15 +122,31 @@ interface DisplayInterface
      * @return  $this
      * @since   1.0.0
      */
-    public function onBeforeRenderViewFooter();
+    public function onBeforeRenderTemplateFooter();
 
     /**
-     * After the View has been rendered but before it has been inserted into the rendered_page
+     * After the Template/Wrap View has been rendered but before it has been inserted into the rendered_page
      *
      * @return  $this
      * @since   1.0.0
      */
-    public function onAfterRenderView();
+    public function onAfterRenderTemplate();
+
+    /**
+     * Before Wrap View is Rendered
+     *
+     * @return  $this
+     * @since   1.0.0
+     */
+    public function onBeforeRenderWrap();
+
+    /**
+     * After the Wrap has been rendered but before it has been inserted into the rendered_page
+     *
+     * @return  $this
+     * @since   1.0.0
+     */
+    public function onAfterRenderWrap();
 
     /**
      * On after rendering the entire document

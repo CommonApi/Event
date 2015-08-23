@@ -4,7 +4,7 @@
  *
  * @package    Event
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
- * @copyright  2014 Amy Stephen. All rights reserved.
+ * @copyright  2014-2015 Amy Stephen. All rights reserved.
  */
 namespace CommonApi\Event;
 
@@ -13,10 +13,10 @@ namespace CommonApi\Event;
  *
  * @author     Amy Stephen
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
- * @copyright  2014 Amy Stephen. All rights reserved.
+ * @copyright  2014-2015 Amy Stephen. All rights reserved.
  * @since      1.0
  */
-interface SystemInterface
+interface SystemEventInterface
 {
     /**
      * After Initialise Processing
@@ -24,7 +24,7 @@ interface SystemInterface
      * @return  $this
      * @since   1.0.0
      */
-    public function onAfterInitialise();
+    public function onAfterStart();
 
     /**
      * Before Route Processing
@@ -43,39 +43,23 @@ interface SystemInterface
     public function onAfterRoute();
 
     /**
-     * Before Resource Processing
+     * Before Dispatcher Processing
      *
      * @return  $this
      * @since   1.0.0
      */
-    public function onBeforeResource();
+    public function onBeforeDispatcher();
 
     /**
-     * After Resource Processing
+     * After Dispatcher Processing
      *
      * @return  $this
      * @since   1.0.0
      */
-    public function onAfterResource();
+    public function onAfterDispatcher();
 
     /**
-     * Before Authorise Processing
-     *
-     * @return  $this
-     * @since   1.0.0
-     */
-    public function onBeforeAuthorise();
-
-    /**
-     * After Authorise Processing
-     *
-     * @return  $this
-     * @since   1.0.0
-     */
-    public function onAfterAuthorise();
-
-    /**
-     * After Resource Processing
+     * Before Execute Processing
      *
      * @return  $this
      * @since   1.0.0
@@ -89,4 +73,20 @@ interface SystemInterface
      * @since   1.0.0
      */
     public function onAfterExecute();
+
+    /**
+     * Before Response Processing
+     *
+     * @return  $this
+     * @since   1.0.0
+     */
+    public function onBeforeResponse();
+
+    /**
+     * After Response Processing
+     *
+     * @return  $this
+     * @since   1.0.0
+     */
+    public function onAfterResponse();
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Authorise Event Interface
+ * User Event Interface
  *
  * @package    Event
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
@@ -9,33 +9,33 @@
 namespace CommonApi\Event;
 
 /**
- * Authorise Event Interface
+ * User Event Interface
  *
  * @author     Amy Stephen
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @since      1.0
  */
-interface AuthoriseInterface
+interface UserEventInterface
 {
     /**
-     * Before logging in processing
+     * Before Authenticate processing
      *
      * @return  $this
      * @since   1.0.0
      */
-    public function onBeforeAuthorise();
+    public function onBeforeAuthenticate();
 
     /**
-     * After Logging in event
+     * After Authenticate processing
      *
      * @return  $this
      * @since   1.0.0
      */
-    public function onAfterAuthorise();
+    public function onAfterAuthenticate();
 
     /**
-     * Before logging out processing
+     * Before Logout processing
      *
      * @return  $this
      * @since   1.0.0
@@ -43,10 +43,26 @@ interface AuthoriseInterface
     public function onBeforeLogout();
 
     /**
-     * After Logging out event
+     * After Logout event
      *
      * @return  $this
      * @since   1.0.0
      */
     public function onAfterLogout();
+
+    /**
+     * Before Authorisation processing
+     *
+     * @return  $this
+     * @since   1.0.0
+     */
+    public function onBeforeAuthorisation();
+
+    /**
+     * After Authorisation processing
+     *
+     * @return  $this
+     * @since   1.0.0
+     */
+    public function onAfterAuthorisation();
 }
